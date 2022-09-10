@@ -13,6 +13,7 @@ pipeline {
                 echo 'building the application .....'
                 echo " build version ${NEW_VERSION}"
                 echo " Branch Name:: ${BRANCH_NAME}"
+                sh "mvn install"
             }
         }
 
