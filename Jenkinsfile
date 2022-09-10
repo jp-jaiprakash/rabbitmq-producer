@@ -29,9 +29,10 @@ pipeline {
                     }
                 }
 
-        stage("deploy") {
+        stage("publish") {
                     steps {
-                        echo 'deploying the application .....'
+                        echo 'publishing the application .....'
+                        sh "mvn package"
                     }
                 }
 
