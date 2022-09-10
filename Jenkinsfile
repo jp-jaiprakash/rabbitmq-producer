@@ -3,6 +3,9 @@ pipeline {
     environment {
         NEW_VERSION = '1.1.0'
     }
+    tools {
+        maven 'maven'
+    }
 
     stages {
         stage("build") {
