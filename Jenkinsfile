@@ -42,17 +42,17 @@ pipeline {
 
     }
 
-    post{
-        always {
-            // This will be always executed
-        }
-        success {
-
-        }
-        failure {
-
-        }
-    }
+//     post{
+//         always {
+//             // This will be always executed
+//         }
+//         success {
+//
+//         }
+//         failure {
+//
+//         }
+//     }
 }
 
 // http://localhost:8080/env-vars.html/
