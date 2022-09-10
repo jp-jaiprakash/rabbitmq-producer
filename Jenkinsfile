@@ -8,7 +8,9 @@ pipeline {
         SERVER_CREDENTIALS = credentials('') // This is the one which binds to jenkins credentials
         // two plugins => credentials and credentials binding
     }
-
+tools{
+ maven
+}
     stages {
         stage("build") {
             when {
