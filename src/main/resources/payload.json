@@ -1,0 +1,10 @@
+[
+  {
+    "url": "localhost:9293/order/paradise",
+    "body": {
+      "name":"Mutton Biryani",
+      "qty": 2,
+      "price": 20
+    }
+  }
+]
