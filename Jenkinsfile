@@ -16,7 +16,13 @@ pipeline {
                 sh "mvn install"
             }
         }
-
+        stage(" Build docker image"){
+            steps {
+                script{
+                    sh 'docker build -t producer'
+                }
+            }
+        }
         stage("test") {
                 when{
                     expression {
