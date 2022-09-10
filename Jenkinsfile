@@ -9,7 +9,7 @@ pipeline {
         // two plugins => credentials and credentials binding
     }
 tools{
- maven
+ maven 'maven'
 }
     stages {
         stage("build") {
